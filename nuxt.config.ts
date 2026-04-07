@@ -5,6 +5,14 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
   ],
 
+  vite: {
+    server: {
+      watch: {
+        ignored: ['**/.local/share/pnpm/store/**', '**/node_modules/**']
+      }
+    }
+  },
+
   app: {
     head: {
       title: 'MangaVault',
