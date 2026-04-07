@@ -1,9 +1,9 @@
 {
-  "_hash": "jblolhzpkhlECdH6bY_l3nIuRkXrtA-Dj1aJ-pxs0Og",
+  "_hash": "OrNmoP50PCvNzfF7gO0xfsFkm91FZS_BtgFHcCBNflM",
   "project": {
     "rootDir": "/home/runner/workspace"
   },
   "versions": {
-    "nuxt": "3.21.2"
+    "nuxt": "4.4.2"
   }
 }
