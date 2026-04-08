@@ -1,17 +1,16 @@
 export default defineNuxtConfig({
-  css: ['~/assets/css/main.css'],
-
   modules: [
+    '@nuxt/eslint',
+    '@nuxt/fonts',
+    '@nuxt/icon',
+    '@nuxt/image',
     '@nuxtjs/tailwindcss',
+    '@pinia/nuxt',
+    'nuxt-swiper',
+    '@vueuse/nuxt',
   ],
-
-  vite: {
-    server: {
-      watch: {
-        ignored: ['**/.local/share/pnpm/store/**', '**/node_modules/**']
-      }
-    }
-  },
+  
+  css: ['~/assets/css/variables.css'],
 
   app: {
     head: {
@@ -27,6 +26,15 @@ export default defineNuxtConfig({
         }
       ]
     }
+  },
+
+  eslint: {
+    config: {},
+  },
+
+  icon: {
+    mode: 'css',
+    cssLayer: 'base',
   },
 
   devtools: { enabled: true }
