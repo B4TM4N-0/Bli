@@ -1,42 +1,45 @@
 import process from 'node:process';globalThis._importMeta_={url:import.meta.url,env:process.env};import { tmpdir } from 'node:os';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getQuery as getQuery$1, readBody, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatus, getRouterParam, getResponseStatusText } from 'file:///home/runner/workspace/node_modules/h3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getQuery as getQuery$1, readBody, getResponseStatus, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener, getRouterParam, getResponseStatusText } from 'file:///workspaces/Bli/node_modules/h3/dist/index.mjs';
 import { Server } from 'node:http';
 import { resolve, dirname, join } from 'node:path';
 import nodeCrypto from 'node:crypto';
 import { parentPort, threadId } from 'node:worker_threads';
-import { escapeHtml } from 'file:///home/runner/workspace/node_modules/@vue/shared/dist/shared.cjs.js';
-import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file:///home/runner/workspace/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file:///home/runner/workspace/node_modules/ufo/dist/index.mjs';
-import destr, { destr as destr$1 } from 'file:///home/runner/workspace/node_modules/destr/dist/index.mjs';
-import { createHooks } from 'file:///home/runner/workspace/node_modules/nitropack/node_modules/hookable/dist/index.mjs';
-import { createFetch, Headers as Headers$1 } from 'file:///home/runner/workspace/node_modules/ofetch/dist/node.mjs';
-import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file:///home/runner/workspace/node_modules/node-mock-http/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file:///home/runner/workspace/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///home/runner/workspace/node_modules/unstorage/drivers/fs.mjs';
-import { digest } from 'file:///home/runner/workspace/node_modules/ohash/dist/index.mjs';
-import { klona } from 'file:///home/runner/workspace/node_modules/klona/dist/index.mjs';
-import defu, { defuFn } from 'file:///home/runner/workspace/node_modules/defu/dist/defu.mjs';
-import { snakeCase } from 'file:///home/runner/workspace/node_modules/scule/dist/index.mjs';
-import { getContext } from 'file:///home/runner/workspace/node_modules/unctx/dist/index.mjs';
-import { toRouteMatcher, createRouter } from 'file:///home/runner/workspace/node_modules/radix3/dist/index.mjs';
+import { escapeHtml } from 'file:///workspaces/Bli/node_modules/@vue/shared/dist/shared.cjs.js';
+import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file:///workspaces/Bli/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file:///workspaces/Bli/node_modules/ufo/dist/index.mjs';
+import destr, { destr as destr$1 } from 'file:///workspaces/Bli/node_modules/destr/dist/index.mjs';
+import { createHooks } from 'file:///workspaces/Bli/node_modules/nitropack/node_modules/hookable/dist/index.mjs';
+import { createFetch, Headers as Headers$1 } from 'file:///workspaces/Bli/node_modules/ofetch/dist/node.mjs';
+import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file:///workspaces/Bli/node_modules/node-mock-http/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file:///workspaces/Bli/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///workspaces/Bli/node_modules/unstorage/drivers/fs.mjs';
+import { digest, hash as hash$1 } from 'file:///workspaces/Bli/node_modules/ohash/dist/index.mjs';
+import { klona } from 'file:///workspaces/Bli/node_modules/klona/dist/index.mjs';
+import defu, { defuFn } from 'file:///workspaces/Bli/node_modules/defu/dist/defu.mjs';
+import { snakeCase } from 'file:///workspaces/Bli/node_modules/scule/dist/index.mjs';
+import { getContext } from 'file:///workspaces/Bli/node_modules/unctx/dist/index.mjs';
+import { toRouteMatcher, createRouter } from 'file:///workspaces/Bli/node_modules/radix3/dist/index.mjs';
 import { readFile } from 'node:fs/promises';
-import consola, { consola as consola$1 } from 'file:///home/runner/workspace/node_modules/consola/dist/index.mjs';
-import { ErrorParser } from 'file:///home/runner/workspace/node_modules/youch-core/build/index.js';
-import { Youch } from 'file:///home/runner/workspace/node_modules/youch/build/index.js';
-import { SourceMapConsumer } from 'file:///home/runner/workspace/node_modules/source-map/source-map.js';
+import consola, { consola as consola$1 } from 'file:///workspaces/Bli/node_modules/consola/dist/index.mjs';
+import { ErrorParser } from 'file:///workspaces/Bli/node_modules/youch-core/build/index.js';
+import { Youch } from 'file:///workspaces/Bli/node_modules/youch/build/index.js';
+import { SourceMapConsumer } from 'file:///workspaces/Bli/node_modules/source-map/source-map.js';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { stringify, uneval } from 'file:///home/runner/workspace/node_modules/devalue/index.js';
-import { captureRawStackTrace, parseRawStackTrace } from 'file:///home/runner/workspace/node_modules/errx/dist/index.js';
-import { isVNode, isRef, toValue } from 'file:///home/runner/workspace/node_modules/vue/index.mjs';
-import _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw from 'file:///home/runner/workspace/node_modules/@nuxt/vite-builder/dist/fix-stacktrace.mjs';
+import { stringify, uneval } from 'file:///workspaces/Bli/node_modules/devalue/index.js';
+import { captureRawStackTrace, parseRawStackTrace } from 'file:///workspaces/Bli/node_modules/errx/dist/index.js';
+import { isVNode, isRef, toValue } from 'file:///workspaces/Bli/node_modules/vue/index.mjs';
+import _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw from 'file:///workspaces/Bli/node_modules/@nuxt/vite-builder/dist/fix-stacktrace.mjs';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname as dirname$1, resolve as resolve$1 } from 'file:///home/runner/workspace/node_modules/pathe/dist/index.mjs';
-import { createHead as createHead$1, propsToString, renderSSRHead } from 'file:///home/runner/workspace/node_modules/unhead/dist/server.mjs';
-import { renderToString } from 'file:///home/runner/workspace/node_modules/vue/server-renderer/index.mjs';
-import { walkResolver } from 'file:///home/runner/workspace/node_modules/unhead/dist/utils.mjs';
+import { dirname as dirname$1, resolve as resolve$1, basename, isAbsolute } from 'file:///workspaces/Bli/node_modules/pathe/dist/index.mjs';
+import { createHead as createHead$1, propsToString, renderSSRHead } from 'file:///workspaces/Bli/node_modules/unhead/dist/server.mjs';
+import { renderToString } from 'file:///workspaces/Bli/node_modules/vue/server-renderer/index.mjs';
+import { walkResolver } from 'file:///workspaces/Bli/node_modules/unhead/dist/utils.mjs';
+import { getIcons } from 'file:///workspaces/Bli/node_modules/@iconify/utils/lib/index.js';
+import { collections } from 'file:///workspaces/Bli/.nuxt/nuxt-icon-server-bundle.mjs';
+import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file:///workspaces/Bli/node_modules/ipx/dist/index.mjs';
 
-const serverAssets = [{"baseName":"server","dir":"/home/runner/workspace/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/workspaces/Bli/server/assets"}];
 
 const assets$1 = createStorage();
 
@@ -48,11 +51,11 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets$1);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/runner/workspace","watchOptions":{"ignored":[null]}}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/runner/workspace/server","watchOptions":{"ignored":[null]}}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/runner/workspace/.nuxt"}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/runner/workspace/.nuxt/cache"}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"/home/runner/workspace/.data/kv"}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/workspaces/Bli","watchOptions":{"ignored":[null]}}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/workspaces/Bli/server","watchOptions":{"ignored":[null]}}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/workspaces/Bli/.nuxt"}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/workspaces/Bli/.nuxt/cache"}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"/workspaces/Bli/.data/kv"}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -577,7 +580,248 @@ function cloneWithProxy(obj, overrides) {
 const cachedEventHandler = defineCachedEventHandler;
 
 const inlineAppConfig = {
-  "nuxt": {}
+  "nuxt": {},
+  "icon": {
+    "provider": "server",
+    "class": "",
+    "aliases": {},
+    "iconifyApiEndpoint": "https://api.iconify.design",
+    "localApiEndpoint": "/api/_nuxt_icon",
+    "fallbackToApi": true,
+    "cssSelectorPrefix": "i-",
+    "cssWherePseudo": true,
+    "cssLayer": "base",
+    "mode": "css",
+    "attrs": {
+      "aria-hidden": true
+    },
+    "collections": [
+      "academicons",
+      "akar-icons",
+      "ant-design",
+      "arcticons",
+      "basil",
+      "bi",
+      "bitcoin-icons",
+      "bpmn",
+      "brandico",
+      "bx",
+      "bxl",
+      "bxs",
+      "bytesize",
+      "carbon",
+      "catppuccin",
+      "cbi",
+      "charm",
+      "ci",
+      "cib",
+      "cif",
+      "cil",
+      "circle-flags",
+      "circum",
+      "clarity",
+      "codex",
+      "codicon",
+      "covid",
+      "cryptocurrency",
+      "cryptocurrency-color",
+      "cuida",
+      "dashicons",
+      "devicon",
+      "devicon-plain",
+      "dinkie-icons",
+      "duo-icons",
+      "ei",
+      "el",
+      "emojione",
+      "emojione-monotone",
+      "emojione-v1",
+      "entypo",
+      "entypo-social",
+      "eos-icons",
+      "ep",
+      "et",
+      "eva",
+      "f7",
+      "fa",
+      "fa-brands",
+      "fa-regular",
+      "fa-solid",
+      "fa6-brands",
+      "fa6-regular",
+      "fa6-solid",
+      "fa7-brands",
+      "fa7-regular",
+      "fa7-solid",
+      "fad",
+      "famicons",
+      "fe",
+      "feather",
+      "file-icons",
+      "flag",
+      "flagpack",
+      "flat-color-icons",
+      "flat-ui",
+      "flowbite",
+      "fluent",
+      "fluent-color",
+      "fluent-emoji",
+      "fluent-emoji-flat",
+      "fluent-emoji-high-contrast",
+      "fluent-mdl2",
+      "fontelico",
+      "fontisto",
+      "formkit",
+      "foundation",
+      "fxemoji",
+      "gala",
+      "game-icons",
+      "garden",
+      "geo",
+      "gg",
+      "gis",
+      "gravity-ui",
+      "gridicons",
+      "grommet-icons",
+      "guidance",
+      "healthicons",
+      "heroicons",
+      "heroicons-outline",
+      "heroicons-solid",
+      "hugeicons",
+      "humbleicons",
+      "ic",
+      "icomoon-free",
+      "icon-park",
+      "icon-park-outline",
+      "icon-park-solid",
+      "icon-park-twotone",
+      "iconamoon",
+      "iconoir",
+      "icons8",
+      "il",
+      "ion",
+      "iwwa",
+      "ix",
+      "jam",
+      "la",
+      "lets-icons",
+      "line-md",
+      "lineicons",
+      "logos",
+      "ls",
+      "lsicon",
+      "lucide",
+      "lucide-lab",
+      "mage",
+      "majesticons",
+      "maki",
+      "map",
+      "marketeq",
+      "material-icon-theme",
+      "material-symbols",
+      "material-symbols-light",
+      "mdi",
+      "mdi-light",
+      "medical-icon",
+      "memory",
+      "meteocons",
+      "meteor-icons",
+      "mi",
+      "mingcute",
+      "mono-icons",
+      "mynaui",
+      "nimbus",
+      "nonicons",
+      "noto",
+      "noto-v1",
+      "nrk",
+      "octicon",
+      "oi",
+      "ooui",
+      "openmoji",
+      "oui",
+      "pajamas",
+      "pepicons",
+      "pepicons-pencil",
+      "pepicons-pop",
+      "pepicons-print",
+      "ph",
+      "picon",
+      "pixel",
+      "pixelarticons",
+      "prime",
+      "proicons",
+      "ps",
+      "qlementine-icons",
+      "quill",
+      "radix-icons",
+      "raphael",
+      "ri",
+      "rivet-icons",
+      "roentgen",
+      "si",
+      "si-glyph",
+      "sidekickicons",
+      "simple-icons",
+      "simple-line-icons",
+      "skill-icons",
+      "solar",
+      "stash",
+      "streamline",
+      "streamline-block",
+      "streamline-color",
+      "streamline-cyber",
+      "streamline-cyber-color",
+      "streamline-emojis",
+      "streamline-flex",
+      "streamline-flex-color",
+      "streamline-freehand",
+      "streamline-freehand-color",
+      "streamline-kameleon-color",
+      "streamline-logos",
+      "streamline-pixel",
+      "streamline-plump",
+      "streamline-plump-color",
+      "streamline-sharp",
+      "streamline-sharp-color",
+      "streamline-stickies-color",
+      "streamline-ultimate",
+      "streamline-ultimate-color",
+      "subway",
+      "svg-spinners",
+      "system-uicons",
+      "tabler",
+      "tdesign",
+      "teenyicons",
+      "temaki",
+      "token",
+      "token-branded",
+      "topcoat",
+      "twemoji",
+      "typcn",
+      "uil",
+      "uim",
+      "uis",
+      "uit",
+      "uiw",
+      "unjs",
+      "vaadin",
+      "vs",
+      "vscode-icons",
+      "websymbol",
+      "weui",
+      "whh",
+      "wi",
+      "wpf",
+      "zmdi",
+      "zondicons"
+    ],
+    "fetchTimeout": 1500
+  },
+  "__swiper": {
+    "bundled": true
+  }
 };
 
 
@@ -635,6 +879,14 @@ const _inlineRuntimeConfig = {
       "/__nuxt_error": {
         "cache": false
       },
+      "/_fonts/**": {
+        "headers": {
+          "cache-control": "public, max-age=31536000, immutable"
+        },
+        "cache": {
+          "maxAge": 31536000
+        }
+      },
       "/_nuxt/builds/meta/**": {
         "headers": {
           "cache-control": "public, max-age=31536000, immutable"
@@ -647,7 +899,22 @@ const _inlineRuntimeConfig = {
       }
     }
   },
-  "public": {}
+  "public": {},
+  "icon": {
+    "serverKnownCssClasses": []
+  },
+  "ipx": {
+    "baseURL": "/_ipx",
+    "alias": {},
+    "fs": {
+      "dir": [
+        "/workspaces/Bli/public"
+      ]
+    },
+    "http": {
+      "domains": []
+    }
+  }
 };
 const envOptions = {
   prefix: "NITRO_",
@@ -669,7 +936,12 @@ function useRuntimeConfig(event) {
   event.context.nitro.runtimeConfig = runtimeConfig;
   return runtimeConfig;
 }
-_deepFreeze(klona(appConfig));
+const _sharedAppConfig = _deepFreeze(klona(appConfig));
+function useAppConfig(event) {
+  {
+    return _sharedAppConfig;
+  }
+}
 function _deepFreeze(object) {
   const propNames = Object.getOwnPropertyNames(object);
   for (const name of propNames) {
@@ -2025,13 +2297,13 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _1tlfEPNRzeN_2rhH6G8m3JJSRWY3xyO54X9oJjMjEKE = (function(nitro) {
+const __BUUU1lHjECuqhcAXKnGLS5yGAb7YNPZXUAWLTkww = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
-const rootDir = "/home/runner/workspace";
+const rootDir = "/workspaces/Bli";
 
 const appHead = {"meta":[{"charset":"utf-8"},{"name":"description","content":"Read manga and manhua online for free"},{"name":"viewport","content":"width=device-width, initial-scale=1"}],"link":[{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"}],"style":[],"script":[],"noscript":[],"title":"MangaVault"};
 
@@ -2060,7 +2332,7 @@ const asyncContext = getContext("nuxt-dev", {
 	asyncContext: true,
 	AsyncLocalStorage
 });
-const _aa3aYI7lpJ3UTko12srUKyUGj5zzxqGpcc8VD7Awhc = (nitroApp) => {
+const _dPaF6XuYjYuadPWq11482IaF8E1We_Lt6ani_SSmYMQ = (nitroApp) => {
 	const handler = nitroApp.h3App.handler;
 	nitroApp.h3App.handler = (event) => {
 		return asyncContext.callAsync({
@@ -2134,8 +2406,8 @@ function onConsoleLog(callback) {
 }
 
 const plugins = [
-  _1tlfEPNRzeN_2rhH6G8m3JJSRWY3xyO54X9oJjMjEKE,
-_aa3aYI7lpJ3UTko12srUKyUGj5zzxqGpcc8VD7Awhc,
+  __BUUU1lHjECuqhcAXKnGLS5yGAb7YNPZXUAWLTkww,
+_dPaF6XuYjYuadPWq11482IaF8E1We_Lt6ani_SSmYMQ,
 _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw
 ];
 
@@ -2146,7 +2418,7 @@ function readAsset (id) {
   return promises.readFile(resolve$1(serverDir, assets[id].path))
 }
 
-const publicAssetBases = {"/_nuxt/builds/meta/":{"maxAge":31536000},"/_nuxt/builds/":{"maxAge":1}};
+const publicAssetBases = {"/_nuxt/builds/meta/":{"maxAge":31536000},"/_nuxt/builds/":{"maxAge":1},"/_fonts/":{"maxAge":31536000}};
 
 function isPublicAssetURL(id = '') {
   if (assets[id]) {
@@ -2164,7 +2436,7 @@ function getAsset (id) {
 
 const METHODS = /* @__PURE__ */ new Set(["HEAD", "GET"]);
 const EncodingMap = { gzip: ".gz", br: ".br" };
-const _o7QewJ = eventHandler((event) => {
+const _9quL_x = eventHandler((event) => {
   if (event.method && !METHODS.has(event.method)) {
     return;
   }
@@ -2251,7 +2523,8 @@ function resolveUnrefHeadInput(input) {
 }
 
 const NUXT_PAYLOAD_INLINE = false;
-const NUXT_RUNTIME_PAYLOAD_EXTRACTION = false;
+
+const payloadCache = useStorage("cache:nuxt:payload") ;
 
 // @__NO_SIDE_EFFECTS__
 function createHead(options = {}) {
@@ -2305,9 +2578,9 @@ function publicAssetsURL(...path) {
 const APP_ROOT_OPEN_TAG = `<${appRootTag}${propsToString(appRootAttrs)}>`;
 const APP_ROOT_CLOSE_TAG = `</${appRootTag}>`;
 // @ts-expect-error file will be produced after app build
-const getServerEntry = () => import('file:///home/runner/workspace/.nuxt//dist/server/server.mjs').then((r) => r.default || r);
+const getServerEntry = () => import('file:///workspaces/Bli/.nuxt//dist/server/server.mjs').then((r) => r.default || r);
 // @ts-expect-error file will be produced after app build
-const getClientManifest = () => import('file:///home/runner/workspace/.nuxt//dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getClientManifest = () => import('file:///workspaces/Bli/.nuxt//dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 // -- SSR Renderer --
 const getSSRRenderer = lazyCachedFunction(async () => {
 	// Load server bundle
@@ -2599,13 +2872,170 @@ async function getIslandContext(event) {
 	};
 }
 
-const _lazy_KWpBkG = () => Promise.resolve().then(function () { return renderer; });
+function defineRenderHandler(render) {
+  const runtimeConfig = useRuntimeConfig();
+  return eventHandler(async (event) => {
+    const nitroApp = useNitroApp();
+    const ctx = { event, render, response: void 0 };
+    await nitroApp.hooks.callHook("render:before", ctx);
+    if (!ctx.response) {
+      if (event.path === `${runtimeConfig.app.baseURL}favicon.ico`) {
+        setResponseHeader(event, "Content-Type", "image/x-icon");
+        return send(
+          event,
+          "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        );
+      }
+      ctx.response = await ctx.render(event);
+      if (!ctx.response) {
+        const _currentStatus = getResponseStatus(event);
+        setResponseStatus(event, _currentStatus === 200 ? 500 : _currentStatus);
+        return send(
+          event,
+          "No response returned from render handler: " + event.path
+        );
+      }
+    }
+    await nitroApp.hooks.callHook("render:response", ctx.response, ctx);
+    if (ctx.response.headers) {
+      setResponseHeaders(event, ctx.response.headers);
+    }
+    if (ctx.response.statusCode || ctx.response.statusMessage) {
+      setResponseStatus(
+        event,
+        ctx.response.statusCode,
+        ctx.response.statusMessage
+      );
+    }
+    return ctx.response.body;
+  });
+}
+
+const scheduledTasks = false;
+
+const tasks = {
+  
+};
+
+const __runningTasks__ = {};
+async function runTask(name, {
+  payload = {},
+  context = {}
+} = {}) {
+  if (__runningTasks__[name]) {
+    return __runningTasks__[name];
+  }
+  if (!(name in tasks)) {
+    throw createError({
+      message: `Task \`${name}\` is not available!`,
+      statusCode: 404
+    });
+  }
+  if (!tasks[name].resolve) {
+    throw createError({
+      message: `Task \`${name}\` is not implemented!`,
+      statusCode: 501
+    });
+  }
+  const handler = await tasks[name].resolve();
+  const taskEvent = { name, payload, context };
+  __runningTasks__[name] = handler.run(taskEvent);
+  try {
+    const res = await __runningTasks__[name];
+    return res;
+  } finally {
+    delete __runningTasks__[name];
+  }
+}
+
+const warnOnceSet = /* @__PURE__ */ new Set();
+const DEFAULT_ENDPOINT = "https://api.iconify.design";
+const _0G3oPA = defineCachedEventHandler(async (event) => {
+  const url = getRequestURL(event);
+  if (!url)
+    return createError({ status: 400, message: "Invalid icon request" });
+  const options = useAppConfig().icon;
+  const collectionName = event.context.params?.collection?.replace(/\.json$/, "");
+  const collection = collectionName ? await collections[collectionName]?.() : null;
+  const apiEndPoint = options.iconifyApiEndpoint || DEFAULT_ENDPOINT;
+  const icons = url.searchParams.get("icons")?.split(",");
+  if (collection) {
+    if (icons?.length) {
+      const data = getIcons(
+        collection,
+        icons
+      );
+      consola$1.debug(`[Icon] serving ${(icons || []).map((i) => "`" + collectionName + ":" + i + "`").join(",")} from bundled collection`);
+      return data;
+    }
+  } else {
+    if (collectionName && !warnOnceSet.has(collectionName) && apiEndPoint === DEFAULT_ENDPOINT) {
+      consola$1.warn([
+        `[Icon] Collection \`${collectionName}\` is not found locally`,
+        `We suggest to install it via \`npm i -D @iconify-json/${collectionName}\` to provide the best end-user experience.`
+      ].join("\n"));
+      warnOnceSet.add(collectionName);
+    }
+  }
+  if (options.fallbackToApi === true || options.fallbackToApi === "server-only") {
+    const apiUrl = new URL("./" + basename(url.pathname) + url.search, apiEndPoint);
+    consola$1.debug(`[Icon] fetching ${(icons || []).map((i) => "`" + collectionName + ":" + i + "`").join(",")} from iconify api`);
+    if (apiUrl.host !== new URL(apiEndPoint).host) {
+      return createError({ status: 400, message: "Invalid icon request" });
+    }
+    try {
+      const data = await $fetch(apiUrl.href);
+      return data;
+    } catch (e) {
+      consola$1.error(e);
+      if (e.status === 404)
+        return createError({ status: 404 });
+      else
+        return createError({ status: 500, message: "Failed to fetch fallback icon" });
+    }
+  }
+  return createError({ status: 404 });
+}, {
+  group: "nuxt",
+  name: "icon",
+  getKey(event) {
+    const collection = event.context.params?.collection?.replace(/\.json$/, "") || "unknown";
+    const icons = String(getQuery$1(event).icons || "");
+    return `${collection}_${icons.split(",")[0]}_${icons.length}_${hash$1(icons)}`;
+  },
+  swr: true,
+  maxAge: 60 * 60 * 24 * 7
+  // 1 week
+});
+
+const _4aSnqo = lazyEventHandler(() => {
+  const opts = useRuntimeConfig().ipx || {};
+  const fsDir = opts?.fs?.dir ? (Array.isArray(opts.fs.dir) ? opts.fs.dir : [opts.fs.dir]).map((dir) => isAbsolute(dir) ? dir : fileURLToPath(new URL(dir, globalThis._importMeta_.url))) : void 0;
+  const fsStorage = opts.fs?.dir ? ipxFSStorage({ ...opts.fs, dir: fsDir }) : void 0;
+  const httpStorage = opts.http?.domains ? ipxHttpStorage({ ...opts.http }) : void 0;
+  if (!fsStorage && !httpStorage) {
+    throw new Error("IPX storage is not configured!");
+  }
+  const ipxOptions = {
+    ...opts,
+    storage: fsStorage || httpStorage,
+    httpStorage
+  };
+  const ipx = createIPX(ipxOptions);
+  const ipxHandler = createIPXH3Handler(ipx);
+  return useBase(opts.baseURL, ipxHandler);
+});
+
+const _lazy_Oniqgo = () => Promise.resolve().then(function () { return renderer; });
 
 const handlers = [
-  { route: '', handler: _o7QewJ, lazy: false, middleware: true, method: undefined },
-  { route: '/__nuxt_error', handler: _lazy_KWpBkG, lazy: true, middleware: false, method: undefined },
+  { route: '', handler: _9quL_x, lazy: false, middleware: true, method: undefined },
+  { route: '/__nuxt_error', handler: _lazy_Oniqgo, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: handler$1, lazy: false, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_KWpBkG, lazy: true, middleware: false, method: undefined }
+  { route: '/api/_nuxt_icon/:collection', handler: _0G3oPA, lazy: false, middleware: false, method: undefined },
+  { route: '/_ipx/**', handler: _4aSnqo, lazy: false, middleware: false, method: undefined },
+  { route: '/_fonts/**', handler: _lazy_Oniqgo, lazy: true, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_Oniqgo, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -2748,82 +3178,6 @@ function useNitroApp() {
   return nitroApp$1;
 }
 runNitroPlugins(nitroApp$1);
-
-function defineRenderHandler(render) {
-  const runtimeConfig = useRuntimeConfig();
-  return eventHandler(async (event) => {
-    const nitroApp = useNitroApp();
-    const ctx = { event, render, response: void 0 };
-    await nitroApp.hooks.callHook("render:before", ctx);
-    if (!ctx.response) {
-      if (event.path === `${runtimeConfig.app.baseURL}favicon.ico`) {
-        setResponseHeader(event, "Content-Type", "image/x-icon");
-        return send(
-          event,
-          "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        );
-      }
-      ctx.response = await ctx.render(event);
-      if (!ctx.response) {
-        const _currentStatus = getResponseStatus(event);
-        setResponseStatus(event, _currentStatus === 200 ? 500 : _currentStatus);
-        return send(
-          event,
-          "No response returned from render handler: " + event.path
-        );
-      }
-    }
-    await nitroApp.hooks.callHook("render:response", ctx.response, ctx);
-    if (ctx.response.headers) {
-      setResponseHeaders(event, ctx.response.headers);
-    }
-    if (ctx.response.statusCode || ctx.response.statusMessage) {
-      setResponseStatus(
-        event,
-        ctx.response.statusCode,
-        ctx.response.statusMessage
-      );
-    }
-    return ctx.response.body;
-  });
-}
-
-const scheduledTasks = false;
-
-const tasks = {
-  
-};
-
-const __runningTasks__ = {};
-async function runTask(name, {
-  payload = {},
-  context = {}
-} = {}) {
-  if (__runningTasks__[name]) {
-    return __runningTasks__[name];
-  }
-  if (!(name in tasks)) {
-    throw createError({
-      message: `Task \`${name}\` is not available!`,
-      statusCode: 404
-    });
-  }
-  if (!tasks[name].resolve) {
-    throw createError({
-      message: `Task \`${name}\` is not implemented!`,
-      statusCode: 501
-    });
-  }
-  const handler = await tasks[name].resolve();
-  const taskEvent = { name, payload, context };
-  __runningTasks__[name] = handler.run(taskEvent);
-  try {
-    const res = await __runningTasks__[name];
-    return res;
-  } finally {
-    delete __runningTasks__[name];
-  }
-}
 
 if (!globalThis.crypto) {
   globalThis.crypto = nodeCrypto.webcrypto;
@@ -3039,7 +3393,7 @@ const handler = defineRenderHandler(async (event) => {
 	// Get route options (for `ssr: false`, `isr`, `cache` and `noScripts`)
 	const routeOptions = getRouteRules(event);
 	// Whether we are prerendering route or using ISR/SWR caching
-	const _PAYLOAD_EXTRACTION = !ssrContext.noSSR && (NUXT_RUNTIME_PAYLOAD_EXTRACTION);
+	const _PAYLOAD_EXTRACTION = !ssrContext.noSSR && ((routeOptions.isr || routeOptions.cache));
 	// When NUXT_PAYLOAD_INLINE is true (payloadExtraction: 'client'), we inline the full payload
 	// in the HTML to avoid a separate _payload.json fetch on initial load (which would trigger a
 	// second render or lambda invocation). The _payload.json endpoint still works for client-side nav.
@@ -3049,6 +3403,9 @@ const handler = defineRenderHandler(async (event) => {
 		const url = ssrContext.url.substring(0, ssrContext.url.lastIndexOf("/")) || "/";
 		ssrContext.url = url;
 		event._path = event.node.req.url = url;
+		if (payloadCache && await payloadCache.hasItem(url)) {
+			return payloadCache.getItem(url);
+		}
 	}
 	if (routeOptions.ssr === false) {
 		ssrContext.noSSR = true;
@@ -3085,7 +3442,17 @@ const handler = defineRenderHandler(async (event) => {
 	// Directly render payload routes
 	if (isRenderingPayload) {
 		const response = renderPayloadResponse(ssrContext);
+		if (payloadCache) {
+			await payloadCache.setItem(ssrContext.url, response);
+		}
 		return response;
+	}
+	if (_PAYLOAD_EXTRACTION) {
+		// Cache payload from the current SSR context so _payload.json requests can be served
+		// without a full re-render (during prerender via LRU+FS, at runtime via in-memory TTL cache)
+		if (payloadCache) {
+			await payloadCache.setItem(ssrContext.url === "/" ? "/" : ssrContext.url.replace(/\/$/, ""), renderPayloadResponse(ssrContext));
+		}
 	}
 	const NO_SCRIPTS = routeOptions.noScripts;
 	// Setup head

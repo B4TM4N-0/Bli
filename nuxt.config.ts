@@ -1,3 +1,5 @@
+/// <reference types="nuxt" />
+
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
@@ -10,7 +12,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
   ],
   
-  css: ['~/assets/css/variables.css'],
+  css: ['~/assets/css/main.css'],
 
   app: {
     head: {

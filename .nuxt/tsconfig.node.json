@@ -13,12 +13,6 @@
       "@vue/compiler-sfc": [
         "../node_modules/@vue/compiler-sfc"
       ],
-      "vue-router": [
-        "../node_modules/vue-router"
-      ],
-      "vue-router/auto-routes": [
-        "../node_modules/vue-router/vue-router-auto-routes"
-      ],
       "@nuxt/schema": [
         "../node_modules/@nuxt/schema"
       ],
@@ -88,7 +82,14 @@
   "exclude": [
     "../node_modules",
     "../node_modules/nuxt/node_modules",
+    "../node_modules/@nuxt/eslint/node_modules",
+    "../node_modules/@nuxt/fonts/node_modules",
+    "../node_modules/@nuxt/icon/node_modules",
+    "../node_modules/@nuxt/image/node_modules",
     "../node_modules/@nuxtjs/tailwindcss/node_modules",
+    "../node_modules/@pinia/nuxt/node_modules",
+    "../node_modules/nuxt-swiper/node_modules",
+    "../node_modules/@vueuse/nuxt/node_modules",
     "../node_modules/@nuxt/devtools/node_modules",
     "../node_modules/@nuxt/telemetry/node_modules",
     "../dist",
