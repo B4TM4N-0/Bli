@@ -22,30 +22,11 @@ _sfc_main$2.setup = (props, ctx) => {
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
 function useScrollReveal(options = {}) {
-  const config = {
-    threshold: 0.15,
-    rootMargin: "0px 0px -10% 0px",
+  ({
     ...options
-  };
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      const element = entry.target;
-      if (!element) {
-        return;
-      }
-      if (entry.isIntersecting) {
-        const delay = Number(element.dataset.revealDelay ?? 0);
-        element.style.transitionDelay = `${delay}ms`;
-        element.classList.add("reveal-visible");
-        observer.unobserve(element);
-      }
-    });
-  }, config);
+  });
   function reveal(element, delay = 0) {
-    if (!element) return;
-    element.dataset.revealDelay = String(delay);
-    element.classList.add("reveal-item");
-    observer.observe(element);
+    return;
   }
   return { reveal };
 }
@@ -200,4 +181,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=index-CGFQqvGK.mjs.map
+//# sourceMappingURL=index-RS4TtB2x.mjs.map

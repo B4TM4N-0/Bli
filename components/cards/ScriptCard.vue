@@ -33,7 +33,7 @@ const props = defineProps({
   rating: { type: [String, Number], required: true },
 })
 
-const cardRef = ref<HTMLElement | null>(null)
+const cardRef = ref(null)
 const { reveal } = useScrollReveal()
 
 onMounted(() => {
